@@ -17,6 +17,13 @@ public class Main {
         yiSang.decreaseBorrowedCount();
         yiSang.decreaseBorrowedCount();
         yiSang.printData();
+        Library angela = new Library(10);
+        for (int i = 0; i < 11; i++) {
+            angela.addBook(italyCooking);
+        }
+        angela.printAvailableBooks();
+        angela.findBookByTitle("Cooking With Nonna");
+        angela.countAvailableBooks();
     }
 }
 

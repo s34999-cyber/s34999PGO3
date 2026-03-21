@@ -16,6 +16,10 @@ public class Book {
         System.out.println("Title: " + title + " Author: " + author + " Page Count: "+ pageCount + " Available?: " + available);
     }
 
+    String returnTitle(){
+        return title;
+    }
+
     void borrow(){
         if(this.available){
             this.available = false;
