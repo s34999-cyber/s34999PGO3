@@ -1,14 +1,16 @@
-public class Book { 
+package src;
+
+public class Book {
     private String title;
     private String author;
     private int pageCount;
     private boolean available;
 
     public Book(String title, String author, int pageCount, boolean available){
-            this.title = title;
-            this.author = author;
-            this.pageCount = pageCount;
-            this.available = available;
+        this.title = title;
+        this.author = author;
+        this.pageCount = pageCount;
+        this.available = available;
     }
 
 
@@ -16,10 +18,13 @@ public class Book {
         System.out.println("Title: " + title + " Author: " + author + " Page Count: "+ pageCount + " Available?: " + available);
     }
 
+    String returnTitle(){
+        return title;
+    }
+
     void borrow(){
         if(this.available){
             this.available = false;
-            System.out.println("Book '"+this.title+"' borrowed.");
         }
         else {
             System.out.println("Book '"+this.title+"' is not available to borrow.");
@@ -29,10 +34,13 @@ public class Book {
     void returnBook(){
         if(!this.available){
             this.available = true;
-            System.out.println("Book '"+ this.title +"' returned.");
         }
         else {
-            System.out.println("Book '"+this.title+"' is already in stock.");
+            System.out.println("But book '"+this.title+"' is already in stock.");
         }
     }
-} 
+
+    boolean isAvailable(){
+        return this.available;
+    }
+}

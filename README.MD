@@ -1,0 +1,4 @@
+Task 1: Added Book object and first test objects, a Book has a title, author, pagecount, and availability status.
+Task 2: Added BookReader object (naming it Reader was causing trouble), a BookReader has a separate first and last name, a count for how many books they are currently borrowing, and a personal card number.
+Task 3: Added Library object, an array of Book objects. It has a set max size, you can add new books (if there is space), change the status of books within the library to borrow them, search for a specific book by giving a title, print out the currently available books.
+Task 4: Added logic to borrow and return books given a title and BookReader, as well as other methods that return information about Books and BookReaders to use.
